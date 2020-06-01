@@ -12,6 +12,7 @@
   >
     <account-menu />
     <home-menu />
+    <collections />
   </v-navigation-drawer>
 </template>
 
@@ -19,12 +20,14 @@
 import AccountMenu from "../menu/AccountMenu";
 import HomeMenu from "../menu/HomeMenu";
 import SidebarLink from "./SidebarLink";
+import Collections from "./Collections";
 
 export default {
   name: "SideBar",
   components: {
     AccountMenu,
-    HomeMenu
+    HomeMenu,
+    Collections
   },
   data: () => ({
     navigation: {
